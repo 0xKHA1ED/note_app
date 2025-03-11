@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/output.css') }}"
+    />
+    <title>{% block title %}Notes{% endblock %}</title>
+  </head>
+  <body>
+    <nav
+      class="container mx-auto text-xl bg-background flex justify-between px-4 py-2 my-4"
+    >
+      <div>
+        <a id="home" href="/" class="text-primary">Home</a>
+      </div>
+      <div class="flex space-x-4">
+        <a id="login" href="/login" class="text-primary">Login</a>
+        <a id="sign-up" href="/sign-up" class="text-primary"
+          >Sign Up</a
+        >
+        <a id="logout" href="/logout" class="text-primary">Logout</a>
+      </div>
+    </nav>
+
+    {% block body %} {% endblock %}
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/index.js') }}"
+    ></script>
+  </body>
+</html>

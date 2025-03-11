@@ -1,0 +1,56 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block body
+%}
+<div class="container mx-auto bg-background">
+  <form action="" class="p-4">
+    <h1 class="text-center text-4xl mb-4">Sign Up</h1>
+    <div id="form-inputs" class="flex flex-col items-center space-y-4">
+      <div class="flex flex-col space-y-1 text-base">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Your Email Address"
+          class="py-2 px-4 rounded-md border border-secondary focus:outline-0"
+        />
+      </div>
+      <div class="flex flex-col space-y-1 text-base">
+        <label for="first_name">First Name</label>
+        <input
+          type="text"
+          name="first_name"
+          id="first_name"
+          placeholder="Enter Your First Name"
+          class="py-2 px-4 rounded-md border border-secondary focus:outline-0"
+        />
+      </div>
+      <div class="flex flex-col space-y-1 text-base">
+        <label for="password">Email Address</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Your Password"
+          class="py-2 px-4 rounded-md border border-secondary focus:outline-0"
+        />
+      </div>
+      <div class="flex flex-col space-y-1 text-base">
+        <label for="password2">Confirm Password</label>
+        <input
+          type="password"
+          name="password2"
+          id="password2"
+          placeholder="Enter Your Password Again"
+          class="py-2 px-4 rounded-md border border-secondary focus:outline-0"
+        />
+      </div>
+
+      <input
+        type="submit"
+        value="Submit"
+        class="px-4 py-2 rounded-lg border border-primary bg-primary text-background mt-4 hover:cursor-pointer hover:bg-background hover:text-primary"
+      />
+    </div>
+  </form>
+</div>
+{% endblock %}

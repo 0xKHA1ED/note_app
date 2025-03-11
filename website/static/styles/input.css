@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #1E293B;       /* Dark Blue Gray */
+    --color-secondary: #64748B;     /* Cool Gray */
+    --color-accent: #EAB308;        /* Vibrant Gold */
+    --color-highlight: #F43F5E;     /* Soft Red */
+    --color-background: #F8FAFC;    /* Light Grayish Blue */
+    --color-foreground: #1E1E1E;    /* Dark Gray (for text) */
+    
+}
